@@ -10,10 +10,12 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var labelResult: UILabel!
+    @IBOutlet weak var textFieldDogAge: UITextField!
     
     @IBAction func buttonDogAge(_ sender: Any) {
         
-        labelResult.text = "A idade do seu cachorro é: "
+        let age = Int(textFieldDogAge.text!)! * 7
+        labelResult.text = "A idade do seu cachorro é :\(String(age))"
     }
     
 
