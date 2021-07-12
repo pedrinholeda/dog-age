@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     @IBAction func buttonDogAge(_ sender: Any) {
         
         let age = Int(textFieldDogAge.text!)! * 7
-        labelResult.text = "A idade do seu cachorro é :\(String(age))"
+        labelResult.text = "A idade do seu cachorro em anos humanos é: \(String(age))"
     }
     
 
